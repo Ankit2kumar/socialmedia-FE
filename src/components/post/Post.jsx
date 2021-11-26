@@ -1,7 +1,7 @@
 import './post.css';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 
-const Post = () => {
+const Post = ({ post }) => {
 	return (
 		<div className="post">
 			<div className="postWrapper">
@@ -13,24 +13,24 @@ const Post = () => {
 							alt=""
 						/>
 						<span className="postUsername">Maria Jonas</span>
-						<span className="postDate">2 mins ago</span>
+						<span className="postDate">{post.date}</span>
 					</div>
 					<div className="postTopRight">
 						<MoreVertIcon />
 					</div>
 				</div>
 				<div className="postCenter">
-					<span className="postText">Hey! It is my first post ever!</span>
-					<img className="postImg" src="/assets/posts/post1.jpeg" alt="" />
+					<span className="postText">{post?.desc}</span>
+					<img className="postImg" src={post.profilePicture} alt="" />
 				</div>
 				<div className="postBottom">
 					<div className="postBottomLeft">
 						<img className="likeIcon" src="/assets/like-icon.png" alt="" />
 						<img className="likeIcon" src="/assets/heart-icon.png" alt="" />
-						<span className="postLikeCounter">32 people like it</span>
+						<span className="postLikeCounter">{post.like} people like it</span>
 					</div>
 					<div className="postBottomRight">
-						<span className="postCommentText">9 Comments</span>
+						<span className="postCommentText">{post.comment}Comments</span>
 					</div>
 				</div>
 			</div>
