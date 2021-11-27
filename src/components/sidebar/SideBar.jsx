@@ -110,6 +110,94 @@ function SideBar() {
 						/>
 						<span className="sidebarFriendName">Dane Isaac</span>
 					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
+					<li className="sidebarFriend">
+						<img
+							src="/assets/person/person2.jpeg"
+							alt=""
+							className="sidebarFriendImg"
+						/>
+						<span className="sidebarFriendName">Dane Isaac</span>
+					</li>
 				</ul>
 			</div>
 		</div>

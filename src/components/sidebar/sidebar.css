@@ -1,8 +1,9 @@
 .sidebar {
 	flex: 3;
-	height: calc(100vh-50px);
-
+	height: 92vh;
 	overflow-y: scroll;
+	position: sticky;
+	top: 50px;
 }
 ::-webkit-scrollbar {
 	width: 5px;
@@ -12,7 +13,7 @@
 	background-color: whitesmoke;
 }
 ::-webkit-scrollbar-thumb {
-	background-color: rgb(36, 36, 36);
+	background-color: rgb(152, 152, 152);
 }
 .sidebarWrapper {
 	padding: 20px;
