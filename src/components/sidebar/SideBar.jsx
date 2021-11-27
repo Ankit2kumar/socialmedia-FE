@@ -1,4 +1,5 @@
 import './sidebar.css';
+import { Users } from '../../dummyData';
 import RssFeedSharpIcon from '@mui/icons-material/RssFeedSharp';
 import ChatIcon from '@mui/icons-material/Chat';
 import VideoLibraryIcon from '@mui/icons-material/VideoLibrary';
@@ -8,6 +9,7 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import WorkOutlineIcon from '@mui/icons-material/WorkOutline';
 import EventIcon from '@mui/icons-material/Event';
 import SchoolIcon from '@mui/icons-material/School';
+import CloseFriend from '../closeFriends/CloseFriend';
 
 function SideBar() {
 	return (
@@ -54,150 +56,9 @@ function SideBar() {
 				<button className="sidebarButton">Show More</button>
 				<hr className="sidebarHr" />
 				<ul className="sidebarFriendList">
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
-					<li className="sidebarFriend">
-						<img
-							src="/assets/person/person2.jpeg"
-							alt=""
-							className="sidebarFriendImg"
-						/>
-						<span className="sidebarFriendName">Dane Isaac</span>
-					</li>
+					{Users.map((u) => (
+						<CloseFriend key={u.id} user={u} />
+					))}
 				</ul>
 			</div>
 		</div>
