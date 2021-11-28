@@ -1,4 +1,5 @@
 import './topbar.css';
+import { Link } from 'react-router-dom';
 import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
@@ -8,7 +9,9 @@ const TopBar = () => {
 	return (
 		<div className="topBarContainer">
 			<div className="topBarLeft">
-				<span className="logo">Connecto</span>
+				<Link to="/" style={{ textDecoration: 'none' }}>
+					<span className="logo">Connecto</span>
+				</Link>
 			</div>
 			<div className="topBarCenter">
 				<div className="searchBar">
