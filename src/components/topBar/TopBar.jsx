@@ -4,8 +4,13 @@ import CircleNotificationsIcon from '@mui/icons-material/CircleNotifications';
 import SearchIcon from '@mui/icons-material/Search';
 import PersonIcon from '@mui/icons-material/Person';
 import ChatIcon from '@mui/icons-material/Chat';
+import { useContext } from 'react';
+import { AuthContext } from '../../context/AuthContext';
 
 const TopBar = () => {
+	const { user } = useContext(AuthContext);
+	const PF = process.env.REACT_APP_PUBLIC_FOLDER;
+
 	return (
 		<div className="topBarContainer">
 			<div className="topBarLeft">
@@ -41,7 +46,15 @@ const TopBar = () => {
 						<span className="topBarIconBadge">6</span>
 					</div>
 				</div>
-				<img src="/assets/person/person.jpeg" alt="" className="topBarImg" />
+				<img
+					src={
+						user.profilePicture
+							? PF + user.profilePicture
+							: PF + 'person/noAvatar.jpeg'
+					}
+					alt=""
+					className="topBarImg"
+				/>
 			</div>
 		</div>
 	);

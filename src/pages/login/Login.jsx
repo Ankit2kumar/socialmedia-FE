@@ -1,7 +1,7 @@
 import { useContext, useRef } from 'react';
 import './login.css';
 import { AuthContext } from '../../context/AuthContext';
-import { loginCall, LoginCall } from '../../apiCalls';
+import { loginCall } from '../../apiCalls';
 import CircularProgress from '@mui/material/CircularProgress';
 
 function Login() {
@@ -15,6 +15,7 @@ function Login() {
 			{ email: email.current.value, password: password.current.value },
 			dispatch
 		);
+		// history.push(/home profile ) but only on success
 	};
 
 	console.log(user);
@@ -66,7 +67,8 @@ function Login() {
 							</button>
 							<span className="loginForgot">Forgot Password?</span>
 							<button className="loginRegisterButton">
-								{isFetching ? (
+								Login
+								{/* {isFetching ? (
 									<CircularProgress
 										color="white"
 										size="20px"
@@ -77,7 +79,7 @@ function Login() {
 									/>
 								) : (
 									'Create a new account'
-								)}
+								)} */}
 							</button>
 						</form>
 					</div>
